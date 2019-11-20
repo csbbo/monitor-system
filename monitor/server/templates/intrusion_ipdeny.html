@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="seriawarning">
+    入侵警报:
+</p>
+<div class="loginip">
+    <p>服务器入侵检测警报系统检测到恶意操作，已启动自动防御</p>
+    <p>您服务器有一个IP:{{ip_addr}}多次尝试登录,被判定为入侵操作,已经被拉入禁止登录列表</p>
+</div>
+<style>
+.loginip{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+.seriawarning{
+    color: red;
+}
+</style>
+
+{% endblock %}

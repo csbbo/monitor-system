@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="seriawarning">
+    入侵警报:
+</p>
+<div class="loginip">
+    <p>我们检测到您服务器一个进程消耗CPU异常使用率已超<b>{{process_use_cpu_warning}}%</b></p>
+</div>
+<style>
+.loginip{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+.seriawarning{
+    color: red;
+}
+</style>
+
+{% endblock %}

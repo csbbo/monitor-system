@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="loginip">
+    <p>我们检测到有一个IP正在登录你的服务器</p>
+    <p><b>IP:{{loginip}}</b></p>
+    <p>如不是本人操作请登录服务器并修改密码以免遭受恶意攻击</p>
+</div>
+<style>
+.loginip{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+</style>
+
+{% endblock %}

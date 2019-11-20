@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <p>我们检测到你的服务器重要文件<b>{{filename}}</b>已经被修改.
+        如不是本人操作请登录服务器查看被修改内容以免数据丢失
+    </p>
+</div>
+<style>
+p{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+b{
+    color: red;
+}
+</style>
+
+{% endblock %}
+<!-- <html>
+    <body>
+        <h1>服务器入侵检测警报系统</h1>
+        <div>
+            <p>我们检测到你的服务器重要文件<b>{{filename}}</b>已经被修改</p>
+            <p>如不是本人操作请登录服务器查看被修改内容以免数据丢失</p>
+        </div>
+    </body>
+</html> -->

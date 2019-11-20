@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="loginip">
+    <p>我们检测到你的服务器打开了一个端口</p>
+    <p><b>端口号:{{port}}</b></p>
+    <p>如不是本人操作请登录服务器并修改密码以免遭受进一步的损失</p>
+</div>
+<style>
+.loginip{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+</style>
+
+{% endblock %}

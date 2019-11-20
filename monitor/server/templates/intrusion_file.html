@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="seriawarning">
+    入侵警报:
+</p>
+<div class="loginip">
+    <p>我们检测到您服务器的<b>{{file_path}}</b>文件已经被删除,极可能是入侵者销毁操作记录</p>
+</div>
+<style>
+.loginip{
+    color: #444;
+    margin: 100px auto;
+    font-size: 20px;
+}
+.seriawarning{
+    color: red;
+}
+</style>
+
+{% endblock %}

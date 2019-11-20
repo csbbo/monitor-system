@@ -1,0 +1,24 @@
+主域名http://shaobo.fun/
+
+登录 login/
+username = yes
+password = chen
+```
+{
+    "msg": null,
+    "token": "49a1e306e6fbb4d39be1b39ea526b27a",
+    "code": 1000
+}
+```
+
+带上登录后返回的token分别请求
+```
+base/           
+cpu/
+mem/
+ports/
+files/
+successip/
+faileip/
+```
+查看数据格式可使用postman模拟post请求
